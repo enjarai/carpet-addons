@@ -9,7 +9,7 @@ Places the mined block in the player inventory when sneaking.
 * Required options: `true`, `false`  
 * Categories: `SURVIVAL`, `FEATURE`, `EXPERIMENTAL`
 
-### keepProjetilesTicked
+### keepProjectilesTicked
 Projectiles are ticked the whole time - Projectile loading chunks.  
 * Type: `boolean`  
 * Default value: `false`  
