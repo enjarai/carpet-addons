@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "carpetaddons.mixins",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "MinecraftServerNoopMixin",
+    "BlockMixin",
+    "ServerChunkManagerMixin"
+  ],
+  "client": [
+    "MinecraftClientNoopMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
