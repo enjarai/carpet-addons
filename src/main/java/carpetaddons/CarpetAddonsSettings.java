@@ -13,6 +13,18 @@ public class CarpetAddonsSettings
 {
 
     @Rule(
+            desc = "instant potions",
+            category = {FEATURE, SURVIVAL, "carpetaddons"}
+    )
+    public static boolean instantPotions = false;
+
+    @Rule(
+            desc = "Combines the duration of potions",
+            category = {SURVIVAL, EXPERIMENTAL, "carpetaddons"}
+    )
+    public static boolean stackingPotions = false;
+
+    @Rule(
             desc = "Projectiles are ticked the whole time - Projectile loading chunks",
             category = {FEATURE, EXPERIMENTAL, "carpetaddons"}
     )
