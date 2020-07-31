@@ -3,13 +3,12 @@
   "package": "carpetaddons.mixins",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "MinecraftServerNoopMixin",
+    "CarpetServerMixin",
     "BlockMixin",
     "ServerChunkManagerMixin",
     "PotionItemMixin"
   ],
   "client": [
-    "MinecraftClientNoopMixin"
   ],
   "injectors": {
     "defaultRequire": 1
