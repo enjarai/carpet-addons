@@ -6,7 +6,8 @@
     "MinecraftServerNoopMixin",
     "BlockMixin",
     "ServerChunkManagerMixin",
-    "PotionItemMixin"
+    "PotionItemMixin",
+    "FlintAndSteelItemMixin"
   ],
   "client": [
     "MinecraftClientNoopMixin"
