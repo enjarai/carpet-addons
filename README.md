@@ -16,6 +16,27 @@ Projectiles are ticked the whole time - Projectile loading chunks.
 * Required options: `true`, `false`  
 * Categories: `FEATURE`, `EXPERIMENTAL`
 
+### instantPotions
+Potion can be used instantly.  
+* Type: `boolean`  
+* Default value: `false`  
+* Required options: `true`, `false`  
+* Categories: `FEATURE`, `SURVIVAL`
+
+### stackingPotions
+Combines the duration of potions.  
+* Type: `boolean`  
+* Default value: `false`  
+* Required options: `true`, `false`  
+* Categories: `FEATURE`, `SURVIVAL
+
+### oldFlintAndSteelBehavior
+Backports 1.12 flint and steel behavior. Flint and steel can be used for updating observers / buds.  
+* Type: `boolean`  
+* Default value: `false`  
+* Required options: `true`, `false`  
+* Categories: `FEATURE`, `SURVIVAL
+
 ## License
 
 MIT
