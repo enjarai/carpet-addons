@@ -16,6 +16,7 @@ public class PotionItemMixin {
 
     /**
      * @author whoImT
+     * @reason instantPotions
      */
     @Overwrite
     public int getMaxUseTime(ItemStack stack) {
