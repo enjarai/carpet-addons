@@ -28,9 +28,11 @@ import static net.minecraft.block.Block.getDroppedStacks;
 @Mixin(Block.class)
 public abstract class BlockMixin implements ItemConvertible {
 
-    /*
+    /**
     * CarefulBreak
     *   TODO: cleanup code and fix console spam
+    * @author whoImT
+     * @reason carefulBreak
     */
     @Overwrite
     /*Nullable*/
