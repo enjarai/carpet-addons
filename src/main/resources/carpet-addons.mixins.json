@@ -6,7 +6,8 @@
     "CarpetServerMixin",
     "BlockMixin",
     "ServerChunkManagerMixin",
-    "PotionItemMixin"
+    "PotionItemMixin",
+    "FlintAndSteelItemMixin"
   ],
   "client": [
   ],
