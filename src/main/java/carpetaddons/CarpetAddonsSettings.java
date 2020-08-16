@@ -18,7 +18,7 @@ public class CarpetAddonsSettings
     public static boolean oldFlintAndSteelBehavior = false;
 
     @Rule(
-            desc = "instant potions",
+            desc = "Potion can be used instantly",
             category = {FEATURE, SURVIVAL, "carpetaddons"}
     )
     public static boolean instantPotions = false;

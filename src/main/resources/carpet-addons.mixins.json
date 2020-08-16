@@ -7,7 +7,7 @@
     "BlockMixin",
     "ServerChunkManagerMixin",
     "PotionItemMixin",
-    "FlintAndSteelItemMixin"
+    "AbstractFireBlockMixin"
   ],
   "client": [
   ],
