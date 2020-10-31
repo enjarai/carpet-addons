@@ -11,6 +11,13 @@ import static carpet.settings.RuleCategory.*;
 @SuppressWarnings("CanBeFinal")
 public class CarpetAddonsSettings
 {
+
+    @Rule(
+            desc = "Combines the duration of splash potions",
+            category = {SURVIVAL, EXPERIMENTAL, "carpetaddons"}
+    )
+    public static boolean stackingSplashPotions = false;
+
     @Rule(
             desc = "Backports 1.12 flint and steel behavior. Flint and steel can be used for updating observers / buds",
             category = {FEATURE, SURVIVAL, "carpetaddons"}
@@ -18,7 +25,7 @@ public class CarpetAddonsSettings
     public static boolean oldFlintAndSteelBehavior = false;
 
     @Rule(
-            desc = "instant potions",
+            desc = "Potion can be used instantly",
             category = {FEATURE, SURVIVAL, "carpetaddons"}
     )
     public static boolean instantPotions = false;
