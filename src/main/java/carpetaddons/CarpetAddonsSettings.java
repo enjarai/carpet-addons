@@ -12,6 +12,12 @@ import static carpet.settings.RuleCategory.*;
 public class CarpetAddonsSettings
 {
     @Rule(
+            desc = "Combines the duration of splash potions",
+            category = {SURVIVAL, EXPERIMENTAL, "carpetaddons"}
+    )
+    public static boolean stackingSplashPotions = false;
+
+    @Rule(
             desc = "Backports 1.12 flint and steel behavior. Flint and steel can be used for updating observers / buds",
             category = {FEATURE, SURVIVAL, "carpetaddons"}
     )
