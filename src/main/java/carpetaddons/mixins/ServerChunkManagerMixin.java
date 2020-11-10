@@ -13,7 +13,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class ServerChunkManagerMixin {
     @Inject(method = "shouldTickEntity", at = @At(value = "HEAD"), cancellable =  true)
     private void onShouldTickEntity(Entity entity, CallbackInfoReturnable<Boolean> cir){
-        if(entity instanceof ProjectileEntity && CarpetAddonsSettings.keepProjectilesTicked)
+        if(CarpetAddonsSettings.keepProjectilesTicked && entity instanceof ProjectileEntity)
             cir.setReturnValue(true);
+            cir.cancel();
     }
 }
