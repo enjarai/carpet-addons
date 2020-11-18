@@ -12,6 +12,12 @@ import static carpet.settings.RuleCategory.*;
 public class CarpetAddonsSettings
 {
     @Rule(
+            desc = "If this is enabled you can hoe dirt with water on top.",
+            category = {SURVIVAL, FEATURE, "carpetaddons"}
+    )
+    public static boolean fixUnderwaterHoe = false;
+
+    @Rule(
             desc = "Combines the duration of splash potions",
             category = {SURVIVAL, EXPERIMENTAL, "carpetaddons"}
     )

@@ -3,12 +3,13 @@
   "package": "carpetaddons.mixins",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "MinecraftServerNoopMixin",
     "BlockMixin",
-    "ServerChunkManagerMixin",
-    "PotionItemMixin",
     "FlintAndSteelItemMixin",
-    "PotionEntityMixin"
+    "HoeItemMixin",
+    "MinecraftServerNoopMixin",
+    "PotionEntityMixin",
+    "PotionItemMixin",
+    "ServerChunkManagerMixin"
   ],
   "client": [
     "MinecraftClientNoopMixin"
