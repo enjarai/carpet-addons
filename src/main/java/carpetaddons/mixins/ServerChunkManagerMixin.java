@@ -15,6 +15,5 @@ public class ServerChunkManagerMixin {
     private void onShouldTickEntity(Entity entity, CallbackInfoReturnable<Boolean> cir){
         if(CarpetAddonsSettings.keepProjectilesTicked && entity instanceof ProjectileEntity)
             cir.setReturnValue(true);
-            cir.cancel();
     }
 }

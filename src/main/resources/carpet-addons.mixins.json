@@ -3,12 +3,13 @@
   "package": "carpetaddons.mixins",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "CarpetServerMixin",
-    "BlockMixin",
-    "ServerChunkManagerMixin",
-    "PotionItemMixin",
     "AbstractFireBlockMixin",
-    "PotionEntityMixin"
+    "BlockMixin",
+    "CarpetServerMixin",
+    "PlayerManagerMixin_llamaDupe",
+    "PotionEntityMixin",
+    "PotionItemMixin",
+    "ServerChunkManagerMixin"
   ],
   "client": [
   ],

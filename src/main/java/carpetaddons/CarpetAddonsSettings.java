@@ -11,6 +11,11 @@ import static carpet.settings.RuleCategory.*;
 @SuppressWarnings("CanBeFinal")
 public class CarpetAddonsSettings
 {
+    @Rule(
+            desc = "Enables old donkey / llmama dupe bug.",
+            category = {SURVIVAL, EXPERIMENTAL,FEATURE, "carpetaddons"}
+    )
+    public static boolean donkeyDupeFeature = false;
 
     @Rule(
             desc = "Combines the duration of splash potions",
