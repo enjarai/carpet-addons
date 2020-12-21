@@ -45,7 +45,7 @@ public class CarpetAddonsSettings
             desc = "Projectiles are ticked the whole time - Projectile loading chunks",
             category = {FEATURE, EXPERIMENTAL, "carpetaddons"}
     )
-    public static boolean keepProjectilesTicked = false;
+    public static boolean keepEnderPearlsTicked = false;
 
 
     @Rule(
