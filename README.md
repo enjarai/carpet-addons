@@ -9,8 +9,8 @@ Places the mined block in the player inventory when sneaking.
 * Required options: `true`, `false`  
 * Categories: `SURVIVAL`, `FEATURE`, `EXPERIMENTAL`
 
-### keepProjectilesTicked
-Projectiles are ticked the whole time - Projectile loading chunks.  
+### keepEnderPearlsTicked
+Ender Pearls are ticked the whole time - Ender Pearl loading chunks.  
 * Type: `boolean`  
 * Default value: `false`  
 * Required options: `true`, `false`  
