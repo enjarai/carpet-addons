@@ -1,5 +1,7 @@
 # Carpet Addons
 
+If you need help dm me on discord: Timstario#7563
+
 ## Features
 Use `/carpet <rulename> true` to enable:
 ### carefulBreak
