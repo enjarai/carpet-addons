@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "id": "carpet-addons",
-  "version": "1.0.7",
+  "version": "1.0.8",
 
   "name": "Carpet Addons",
   "description": "More useful features for carpet",
   "authors": [
-    "gnembon, whoImT"
+    "whoImT"
   ],
   "contact": {
     "homepage": "https://github.com/whoImT/carpet-addons",
