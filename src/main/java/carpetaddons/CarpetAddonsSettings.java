@@ -1,6 +1,9 @@
 package carpetaddons;
 
+import carpet.settings.ParsedRule;
 import carpet.settings.Rule;
+import carpet.settings.Validator;
+import net.minecraft.server.command.ServerCommandSource;
 
 import static carpet.settings.RuleCategory.*;
 
@@ -11,6 +14,31 @@ import static carpet.settings.RuleCategory.*;
 @SuppressWarnings("CanBeFinal")
 public class CarpetAddonsSettings
 {
+    private static class projectileRaycastLengthValidator extends Validator<Integer> {
+
+    @Override
+    public Integer validate(ServerCommandSource serverCommandSource, ParsedRule<Integer> parsedRule, Integer newValue, String s) {
+        return newValue >= 0 ? newValue : null;
+    }
+
+    @Override
+    public String description() {
+        return "You must choose a value greater or equal to 0";
+    }
+
+    }
+    @Rule(
+            desc = "Changes the distance projectiles check for collisions. If set to 0 all Blocks to the destination will be checked which is the Vanilla behaviour.",
+            extra = {"This reduces lag for fast projectiles. In 1.12 the value was 200."},
+            category = {EXPERIMENTAL,OPTIMIZATION, "carpetaddons"},
+            options = {"0","200"},
+            strict = false,
+            validate = {projectileRaycastLengthValidator.class}
+    )
+    public static int projectileRaycastLength = 0;
+
+
+
     @Rule(
             desc = "Enables old donkey / llmama dupe bug.",
             category = {SURVIVAL, EXPERIMENTAL,FEATURE, "carpetaddons"}
