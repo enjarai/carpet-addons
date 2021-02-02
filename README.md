@@ -1,9 +1,19 @@
 # Carpet Addons
 
-If you need help dm me on discord: Timstario#7563
+If you need help dm me on discord: Timstario#3141
 
 ## Features
 Use `/carpet <rulename> true` to enable:
+
+### projectileRaycastLength
+Changes the distance projectiles check for collisions. If set to 0 all Blocks to the destination will be checked which is the Vanilla behaviour.
+
+This reduces lag for fast projectiles. In 1.12 the value was 200.
+* Type: `int`  
+* Default value: `0`  
+* Suggested options: `0`, `200`  
+* Categories: `OPTIMIZATION`, `EXPERIMENTAL`
+
 ### carefulBreak
 Places the mined block in the player inventory when sneaking.  
 * Type: `boolean`  
@@ -12,14 +22,14 @@ Places the mined block in the player inventory when sneaking.
 * Categories: `SURVIVAL`, `FEATURE`, `EXPERIMENTAL`
 
 ### keepEnderPearlsTicked
-Ender Pearls are ticked the whole time - Ender Pearl loading chunks.  
+Ender Pearls are ticking the whole time - Ender Pearl loading chunks.  
 * Type: `boolean`  
 * Default value: `false`  
 * Required options: `true`, `false`  
 * Categories: `FEATURE`, `EXPERIMENTAL`
 
 ### donkeyDupeFeature 
-Enables old donkey / llmama dupe bug.
+Enables old multiplayer donkey / llama dupe bug.
 * Type: `boolean`  
 * Default value: `false`  
 * Required options: `true`, `false`  

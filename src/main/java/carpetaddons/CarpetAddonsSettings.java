@@ -40,7 +40,7 @@ public class CarpetAddonsSettings
 
 
     @Rule(
-            desc = "Enables old donkey / llmama dupe bug.",
+            desc = "Enables old donkey / llama dupe bug.",
             category = {SURVIVAL, EXPERIMENTAL,FEATURE, "carpetaddons"}
     )
     public static boolean donkeyDupeFeature = false;
