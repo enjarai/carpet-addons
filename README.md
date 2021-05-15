@@ -1,6 +1,6 @@
 # Carpet Addons
 
-If you need help dm me on discord: Timstario#3141
+If you need help dm me on discord: Timstario#9791
 
 ## Features
 Use `/carpet <rulename> true` to enable:
