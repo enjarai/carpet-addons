@@ -38,13 +38,6 @@ public class CarpetAddonsSettings
     public static int projectileRaycastLength = 0;
 
 
-
-    @Rule(
-            desc = "Enables old donkey / llama dupe bug.",
-            category = {SURVIVAL, EXPERIMENTAL,FEATURE, "carpetaddons"}
-    )
-    public static boolean donkeyDupeFeature = false;
-
     @Rule(
             desc = "Combines the duration of splash potions",
             category = {SURVIVAL, EXPERIMENTAL, "carpetaddons"}

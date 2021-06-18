@@ -1,16 +1,15 @@
 {
   "required": true,
   "package": "carpetaddons.mixins",
-  "compatibilityLevel": "JAVA_8",
+  "compatibilityLevel": "JAVA_16",
   "mixins": [
     "AbstractFireBlockMixin",
     "BlockMixin",
     "CarpetServerMixin",
-    "PlayerManagerMixin_llamaDupe",
+    "EnderPearlEntityMixin",
     "PotionEntityMixin",
     "PotionItemMixin",
-    "ProjectileUtilMixin",
-    "ServerChunkManagerMixin"
+    "ProjectileUtilMixin"
   ],
   "client": [
   ],
