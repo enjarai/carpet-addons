@@ -9,7 +9,6 @@
     "PlayerManagerMixin_llamaDupe",
     "PotionEntityMixin",
     "PotionItemMixin",
-    "ProjectileUtilMixin",
     "ServerChunkManagerMixin"
   ],
   "client": [

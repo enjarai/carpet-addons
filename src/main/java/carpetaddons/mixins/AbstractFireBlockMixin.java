@@ -15,8 +15,7 @@ public class AbstractFireBlockMixin {
 
     @Redirect(method = "method_30032", require = 0, at = @At(value = "INVOKE", target = "Lnet/minecraft/block/BlockState;canPlaceAt(Lnet/minecraft/world/WorldView;Lnet/minecraft/util/math/BlockPos;)Z"))
     private static boolean canPlaceAt(BlockState blockState, WorldView world, BlockPos pos){
-        if(CarpetAddonsSettings.oldFlintAndSteelBehavior)
-            return true;
-        return blockState.canPlaceAt(world,pos);
+        return CarpetAddonsSettings.oldFlintAndSteelBehavior ?
+                world.isAir(pos) : blockState.canPlaceAt(world,pos);
     }
 }
