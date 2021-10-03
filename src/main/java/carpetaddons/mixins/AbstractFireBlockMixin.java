@@ -18,7 +18,7 @@ public class AbstractFireBlockMixin {
 
     @Inject(method = "canPlaceAt",at = @At(value = "HEAD"), cancellable = true)
     private static void canPlaceAt(World world, BlockPos pos, Direction direction, CallbackInfoReturnable<Boolean> cir){
-        if(CarpetAddonsSettings.oldFlintAndSteelBehavior) {
+        if(CarpetAddonsSettings.oldFlintAndSteelBehavior && world.isAir(pos)) {
             cir.setReturnValue(true);
             cir.cancel();
         }

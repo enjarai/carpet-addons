@@ -8,8 +8,7 @@
     "CarpetServerMixin",
     "EnderPearlEntityMixin",
     "PotionEntityMixin",
-    "PotionItemMixin",
-    "ProjectileUtilMixin"
+    "PotionItemMixin"
   ],
   "client": [
   ],
