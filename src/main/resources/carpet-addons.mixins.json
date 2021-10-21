@@ -4,12 +4,14 @@
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "AbstractFireBlockMixin",
-    "BlockMixin",
     "CarpetServerMixin",
     "PlayerManagerMixin_llamaDupe",
     "PotionEntityMixin",
     "PotionItemMixin",
-    "ServerChunkManagerMixin"
+    "ProjectileUtilMixin",
+    "ServerChunkManagerMixin",
+    "carefulbreak.BlockMixin",
+    "carefulbreak.TallPlantBlockMixin"
   ],
   "client": [
   ],

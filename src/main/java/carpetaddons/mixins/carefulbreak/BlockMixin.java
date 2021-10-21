@@ -1,10 +1,11 @@
-package carpetaddons.mixins;
+package carpetaddons.mixins.carefulbreak;
 
 import carpet.CarpetServer;
 import carpetaddons.CarpetAddonsSettings;
 import carpetaddons.utils.CarefulBreakUtils;
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
+import net.minecraft.block.enums.BedPart;
 import net.minecraft.block.enums.DoubleBlockHalf;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -40,7 +41,7 @@ public abstract class BlockMixin implements ItemConvertible {
             }
     }
 
-    //carefulBreak PISTON_HEADS
+    //carefulBreak PISTON_HEADS and BED
     @Inject(method = "onBreak", at = @At("HEAD"))
     private void onBreak1(World world, BlockPos pos, BlockState state, PlayerEntity player, CallbackInfo ci) {
         if(CarpetAddonsSettings.carefulBreak && player.isInSneakingPose()) {
@@ -53,14 +54,15 @@ public abstract class BlockMixin implements ItemConvertible {
                     CarefulBreakUtils.placeItemInInventory(blockState, world, pos, null, player, player.getMainHandStack());
                     world.removeBlock(pos, false);
                 }
-            }//else if(state.getBlock() instanceof TallPlantBlock && state.get(TallPlantBlock.HALF) == DoubleBlockHalf.UPPER){
-             //   BlockPos blockPos = pos.down();
-             //   BlockState blockState = world.getBlockState(blockPos);
-             //   if (blockState.getBlock() == state.getBlock() && blockState.get(TallPlantBlock.HALF) == DoubleBlockHalf.LOWER) {
-             //       CarefulBreakUtils.placeItemInInventory(blockState, world, pos, null, player, player.getMainHandStack());
-             //       world.removeBlock(pos,false);
-             //   }
-            //}
+            }else if(state.getBlock() instanceof BedBlock && state.get(BedBlock.PART) == BedPart.FOOT){
+                BlockPos blockPos = pos.offset(state.get(HorizontalFacingBlock.FACING));
+                BlockState blockState = world.getBlockState(blockPos);
+                if (blockState.getBlock() instanceof BedBlock && blockState.get(BedBlock.PART) == BedPart.HEAD) {
+                    CarefulBreakUtils.placeItemInInventory(blockState, world, pos, null, player, player.getMainHandStack());
+                    world.setBlockState(blockPos, Blocks.AIR.getDefaultState(), 35);
+                    world.syncWorldEvent(player, 2001, blockPos, Block.getRawIdFromState(blockState));
+                }
+            }
         }
     }
 }

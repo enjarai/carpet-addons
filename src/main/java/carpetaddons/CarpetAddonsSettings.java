@@ -14,6 +14,15 @@ import static carpet.settings.RuleCategory.*;
 @SuppressWarnings("CanBeFinal")
 public class CarpetAddonsSettings
 {
+    @Rule(
+            desc = "Changes the distance projectiles check for collisions. If set to 0 all Blocks to the destination will be checked which is the Vanilla behaviour.",
+            extra = {"This reduces lag for fast projectiles. In 1.12 the value was 200."},
+            category = {EXPERIMENTAL,OPTIMIZATION, "carpetaddons"},
+            options = {"0","100","200"},
+            strict = false,
+            validate = Validator.NONNEGATIVE_NUMBER.class
+    )
+    public static int projectileRaycastLength = 0;
 
     @Rule(
             desc = "Enables old donkey / llama dupe bug.",
