@@ -6,11 +6,12 @@
     "AbstractFireBlockMixin",
     "BlockMixin",
     "CarpetServerMixin",
+    "EntityMixing_momentumLoss",
     "PlayerManagerMixin_llamaDupe",
     "PotionEntityMixin",
     "PotionItemMixin",
     "ProjectileUtilMixin",
-    "ServerChunkManagerMixin"
+    "ServerWorldMixin"
   ],
   "client": [
   ],
