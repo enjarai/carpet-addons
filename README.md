@@ -1,6 +1,8 @@
 # Carpet Addons
 
-If you need help dm me on discord: Timstario#9791
+My fork of carpet-addons updated to 1.18.1. 
+Since this is mostly here for the carefulBreak rule (and I'm lazy), 
+every rule that didn't work easily is removed.
 
 ## Features
 Use `/carpet <rulename> true` to enable:
@@ -20,41 +22,6 @@ Places the mined block in the player inventory when sneaking.
 * Default value: `false`  
 * Required options: `true`, `false`  
 * Categories: `SURVIVAL`, `FEATURE`, `EXPERIMENTAL`
-
-### keepEnderPearlsTicked
-Ender Pearls are ticking the whole time - Ender Pearl loading chunks.  
-* Type: `boolean`  
-* Default value: `false`  
-* Required options: `true`, `false`  
-* Categories: `FEATURE`, `EXPERIMENTAL`
-
-### donkeyDupeFeature 
-Enables old multiplayer donkey / llama dupe bug.
-* Type: `boolean`  
-* Default value: `false`  
-* Required options: `true`, `false`  
-* Categories: `FEATURE`, `SURVIVAL`, `EXPERIMENTAL`
-
-### instantPotions
-Potion can be used instantly.  
-* Type: `boolean`  
-* Default value: `false`  
-* Required options: `true`, `false`  
-* Categories: `FEATURE`, `SURVIVAL`
-
-### stackingPotions
-Combines the duration of potions.  
-* Type: `boolean`  
-* Default value: `false`  
-* Required options: `true`, `false`  
-* Categories: `FEATURE`, `SURVIVAL`
-
-### stackingSplashPotions
-Combines the duration of splash potions.  
-* Type: `boolean` 
-* Default value: `false`  
-* Required options: `true`, `false`  
-* Categories: `FEATURE`, `SURVIVAL`
 
 ### oldFlintAndSteelBehavior
 Backports 1.12 flint and steel behavior. Flint and steel can be used for updating observers / buds.  

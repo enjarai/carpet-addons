@@ -5,11 +5,7 @@
   "mixins": [
     "AbstractFireBlockMixin",
     "CarpetServerMixin",
-    "PlayerManagerMixin_llamaDupe",
-    "PotionEntityMixin",
-    "PotionItemMixin",
     "ProjectileUtilMixin",
-    "ServerChunkManagerMixin",
     "carefulbreak.BlockMixin",
     "carefulbreak.TallPlantBlockMixin"
   ],

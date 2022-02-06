@@ -24,17 +24,12 @@ public class CarpetAddonsSettings
     )
     public static int projectileRaycastLength = 0;
 
-    @Rule(
-            desc = "Enables old donkey / llama dupe bug.",
-            category = {SURVIVAL, EXPERIMENTAL,FEATURE, "carpetaddons"}
-    )
-    public static boolean donkeyDupeFeature = false;
+//    @Rule(
+//            desc = "Enables old donkey / llama dupe bug.",
+//            category = {SURVIVAL, EXPERIMENTAL,FEATURE, "carpetaddons"}
+//    )
+//    public static boolean donkeyDupeFeature = false;
 
-    @Rule(
-            desc = "Combines the duration of splash potions",
-            category = {SURVIVAL, EXPERIMENTAL, "carpetaddons"}
-    )
-    public static boolean stackingSplashPotions = false;
 
     @Rule(
             desc = "Backports 1.12 flint and steel behavior. Flint and steel can be used for updating observers / buds",
@@ -42,23 +37,12 @@ public class CarpetAddonsSettings
     )
     public static boolean oldFlintAndSteelBehavior = false;
 
-    @Rule(
-            desc = "Potion can be used instantly",
-            category = {FEATURE, SURVIVAL, "carpetaddons"}
-    )
-    public static boolean instantPotions = false;
 
-    @Rule(
-            desc = "Combines the duration of potions",
-            category = {SURVIVAL, EXPERIMENTAL, "carpetaddons"}
-    )
-    public static boolean stackingPotions = false;
-
-    @Rule(
-            desc = "Projectiles are ticked the whole time - Projectile loading chunks",
-            category = {FEATURE, EXPERIMENTAL, "carpetaddons"}
-    )
-    public static boolean keepEnderPearlsTicked = false;
+//    @Rule(
+//            desc = "Projectiles are ticked the whole time - Projectile loading chunks",
+//            category = {FEATURE, EXPERIMENTAL, "carpetaddons"}
+//    )
+//    public static boolean keepEnderPearlsTicked = false;
 
 
     @Rule(
