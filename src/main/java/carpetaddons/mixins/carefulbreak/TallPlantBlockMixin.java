@@ -22,7 +22,7 @@ public class TallPlantBlockMixin {
 
     @Redirect(method = "onBreak", at = @At(value = "INVOKE", target = "Lnet/minecraft/block/TallPlantBlock;dropStacks(Lnet/minecraft/block/BlockState;Lnet/minecraft/world/World;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/block/entity/BlockEntity;Lnet/minecraft/entity/Entity;Lnet/minecraft/item/ItemStack;)V"))
     private void onDropStacks(BlockState state, World world, BlockPos pos, BlockEntity blockEntity, Entity entity, ItemStack itemStack){
-        if (CarpetAddonsSettings.carefulBreak && entity instanceof PlayerEntity && entity.isInSneakingPose()) {
+        if (CarpetAddonsSettings.carefulBreak && entity instanceof PlayerEntity && (entity.isInSneakingPose() || CarpetAddonsSettings.carefulBreakNoSneak)) {
             DoubleBlockHalf doubleBlockHalf = state.get(TallPlantBlock.HALF);
             if (doubleBlockHalf == DoubleBlockHalf.UPPER) {
                 BlockPos blockPos = pos.down();

@@ -23,6 +23,13 @@ Places the mined block in the player inventory when sneaking.
 * Required options: `true`, `false`  
 * Categories: `SURVIVAL`, `FEATURE`, `EXPERIMENTAL`
 
+### carefulBreakNoSneak
+Don't require the player to sneak to use carefulBreak
+* Type: `boolean`
+* Default value: `false`
+* Required options: `true`, `false`
+* Categories: `SURVIVAL`, `FEATURE`, `EXPERIMENTAL`
+
 ### oldFlintAndSteelBehavior
 Backports 1.12 flint and steel behavior. Flint and steel can be used for updating observers / buds.  
 * Type: `boolean`  

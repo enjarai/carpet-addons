@@ -50,4 +50,10 @@ public class CarpetAddonsSettings
             category = {SURVIVAL, FEATURE, EXPERIMENTAL, "carpetaddons"}
     )
     public static boolean carefulBreak = false;
+
+    @Rule(
+            desc = "Don't require the player to sneak to use carefulBreak",
+            category = {SURVIVAL, FEATURE, EXPERIMENTAL, "carpetaddons"}
+    )
+    public static boolean carefulBreakNoSneak = false;
 }
